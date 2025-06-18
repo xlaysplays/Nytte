@@ -4,18 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Nytte Bot - Best Utilities in One Bot</title>
-  
-  <!-- SEO Meta -->
   <meta name="description" content="Nytte is a powerful multi-tool Discord bot by PastKJ. Moderation, utilities, logging & more in one!" />
   <meta property="og:title" content="Nytte Bot" />
-  <meta property="og:description" content="Best Utilities in One Bot – by PastKJ" />
+  <meta property="og:description" content="Best Utilities in One Bot â€“ by PastKJ" />
   <meta property="og:type" content="website" />
-  
-  <!-- Tailwind CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
-
   <style>
-    /* Glassmorphism card */
     .glass-card {
       background: rgba(255 255 255 / 0.1);
       backdrop-filter: saturate(180%) blur(20px);
@@ -24,14 +18,10 @@
       box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
       transition: background 0.3s ease;
     }
-
-    /* Dark mode overrides */
     body.dark {
       background: #0f172a;
       color: #e0e7ff;
     }
-
-    /* Scrollbar for commands list */
     #commandsList {
       max-height: 400px;
       overflow-y: auto;
@@ -46,134 +36,75 @@
   </style>
 </head>
 <body class="bg-gradient-to-br from-indigo-900 via-purple-900 to-pink-900 text-white min-h-screen flex flex-col transition-colors duration-500">
-
   <header class="flex items-center justify-between p-6 max-w-6xl mx-auto">
-    <h1 class="text-4xl font-extrabold drop-shadow-lg select-none">🤖 Nytte Bot</h1>
-    <button id="darkToggle" class="text-indigo-400 hover:text-indigo-200 transition" aria-label="Toggle Dark Mode">🌙</button>
+    <h1 class="text-4xl font-extrabold drop-shadow-lg select-none">ðŸ¤– Nytte Bot</h1>
+    <button id="darkToggle" class="text-indigo-400 hover:text-indigo-200 transition" aria-label="Toggle Dark Mode">ðŸŒ™</button>
   </header>
-
   <main class="flex-grow max-w-6xl mx-auto px-6 py-8 space-y-12">
-
-    <!-- Hero -->
     <section class="text-center max-w-3xl mx-auto space-y-4">
       <h2 class="text-5xl font-bold drop-shadow-lg">Best Utilities in One Bot</h2>
-      <p class="text-xl text-indigo-200">Nytte combines moderation, logging, utilities, and more — all in one powerful Discord bot made by PastKJ.</p>
+      <p class="text-xl text-indigo-200">Nytte combines moderation, logging, utilities, and more â€” all in one powerful Discord bot made by PastKJ.</p>
       <div class="flex flex-wrap justify-center gap-6 mt-6">
-        <a href="https://discord.com/oauth2/authorize?client_id=1367133692711010344&permissions=8&integration_type=0&scope=bot" target="_blank" class="glass-card px-6 py-3 font-bold text-indigo-900 bg-indigo-400 hover:bg-indigo-500 transition">➕ Invite Nytte</a>
-        <a href="https://top.gg/bot/1367133692711010344" target="_blank" class="glass-card px-6 py-3 font-bold text-pink-400 bg-pink-700 hover:bg-pink-600 transition">🔼 Vote on Top.gg</a>
-        <a href="https://discord.gg/TZKGusBZbH" target="_blank" class="glass-card px-6 py-3 font-bold text-green-400 bg-green-700 hover:bg-green-600 transition">💬 Support Server</a>
+        <a href="#" class="glass-card px-6 py-3 font-bold text-indigo-900 bg-indigo-400 hover:bg-indigo-500 transition">âž• Invite Nytte</a>
+        <a href="#" class="glass-card px-6 py-3 font-bold text-pink-400 bg-pink-700 hover:bg-pink-600 transition">ðŸ”¼ Vote on Top.gg</a>
+        <a href="#" class="glass-card px-6 py-3 font-bold text-green-400 bg-green-700 hover:bg-green-600 transition">ðŸ’¬ Support Server</a>
       </div>
     </section>
-
-    <!-- About -->
     <section class="max-w-4xl mx-auto p-6 text-center text-indigo-200 bg-indigo-900 bg-opacity-40 rounded-lg glass-card">
       <h2 class="text-4xl font-bold mb-4 text-white">About Nytte</h2>
       <p class="text-lg leading-relaxed">
         Nytte is a powerful <strong>all-in-one utility bot</strong> for Discord, created by PastKJ.<br />
-        Designed to simplify server management, Nytte combines essential features like moderation, logging, reminders, fun utilities, and much more — all in a sleek, easy-to-use package.<br /><br />
-        Whether you need to keep your community safe, automate tasks, or add interactive features, Nytte has you covered. Trusted by thousands of servers and featured on Top.gg, it’s the ultimate toolset to keep your Discord server running smoothly.
+        It combines essential features like moderation, logging, reminders, fun utilities, and more â€” all in a sleek, easy-to-use package.
       </p>
     </section>
-
-    <!-- Features -->
     <section class="max-w-4xl mx-auto p-6 mt-12 text-indigo-100">
       <h2 class="text-3xl font-semibold mb-6 text-white text-center">Features</h2>
       <ul class="list-disc list-inside space-y-2 max-w-md mx-auto text-lg">
-        <li>🔧 Moderation commands (kick, ban, mute, warn, purge)</li>
-        <li>📋 Logging (message edits, deletes, joins/leaves)</li>
-        <li>⏰ Reminder and timer utilities</li>
-        <li>🎉 Fun commands & utilities</li>
-        <li>📊 Server stats & info commands</li>
-        <li>💡 Easy to configure and use</li>
-        <li>⚡ Fast and reliable with minimal downtime</li>
+        <li>Moderation commands</li>
+        <li>Logging features</li>
+        <li>Reminder and timers</li>
+        <li>Fun & utility tools</li>
+        <li>Easy to use and fast</li>
       </ul>
     </section>
-
-    <!-- Commands Search -->
     <section class="max-w-4xl mx-auto">
-      <h3 class="text-3xl font-semibold mb-4">📜 Commands</h3>
-      <input id="cmdSearch" type="text" placeholder="Search commands..." class="w-full p-3 rounded bg-indigo-800 text-white placeholder-indigo-400 focus:outline-none focus:ring-2 focus:ring-indigo-400 mb-6" />
-      <div id="commandsList" class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-        <!-- Commands will be inserted here -->
-      </div>
+      <h3 class="text-3xl font-semibold mb-4">ðŸ“œ Commands</h3>
+      <input id="cmdSearch" type="text" placeholder="Search commands..." class="w-full p-3 rounded bg-indigo-800 text-white placeholder-indigo-400 mb-6" />
+      <div id="commandsList" class="grid grid-cols-1 sm:grid-cols-2 gap-6"></div>
     </section>
   </main>
-
   <footer class="text-center p-6 text-indigo-300 select-none bg-indigo-950">
-    © 2025 Nytte by PastKJ • All rights reserved
+    Â© 2025 Nytte by PastKJ â€¢ <a href="tos.html" class="underline hover:text-white">Terms</a> â€¢ <a href="privacy.html" class="underline hover:text-white">Privacy</a>
   </footer>
-
-<script>
-  // Commands data
-  const commands = [
-    { name: '/userinfo', description: 'Shows user info' },
-    { name: '/serverinfo', description: 'Shows server info' },
-    { name: '/purge', description: 'Bulk delete messages' },
-    { name: '/warn', description: 'Warn a user' },
-    { name: '/kick', description: 'Kick a user from server' },
-    { name: '/ban', description: 'Ban a user from server' },
-    { name: '/mute', description: 'Mute a user' },
-    { name: '/slowmode', description: 'Set slowmode in channel' },
-    { name: '/reminder', description: 'Set a reminder' },
-    { name: '/avatar', description: 'Get user avatar' },
-    { name: '/help', description: 'Shows help menu' },
-    { name: '/stats', description: 'Shows server stats' },
-    { name: '/ping', description: 'Check bot latency' },
-    { name: '/invite', description: 'Get bot invite link' }
-  ];
-
-  const commandsList = document.getElementById('commandsList');
-  const cmdSearch = document.getElementById('cmdSearch');
-
-  function renderCommands(filter = '') {
-    commandsList.innerHTML = '';
-    const filtered = commands.filter(cmd =>
-      cmd.name.toLowerCase().includes(filter.toLowerCase()) ||
-      cmd.description.toLowerCase().includes(filter.toLowerCase())
-    );
-    if (filtered.length === 0) {
-      commandsList.innerHTML = '<p class="text-center col-span-full text-indigo-400">No commands found.</p>';
-      return;
+  <script>
+    const commands = [
+      { name: '/userinfo', description: 'Shows user info' },
+      { name: '/serverinfo', description: 'Shows server info' },
+      { name: '/purge', description: 'Bulk delete messages' },
+      { name: '/warn', description: 'Warn a user' },
+      { name: '/kick', description: 'Kick a user' },
+      { name: '/ban', description: 'Ban a user' },
+      { name: '/reminder', description: 'Set a reminder' },
+      { name: '/avatar', description: 'Get user avatar' },
+    ];
+    const list = document.getElementById('commandsList');
+    const input = document.getElementById('cmdSearch');
+    function renderCommands(filter = '') {
+      list.innerHTML = '';
+      const results = commands.filter(c => c.name.includes(filter) || c.description.includes(filter));
+      if (!results.length) list.innerHTML = '<p class="text-indigo-300">No commands found.</p>';
+      results.forEach(c => {
+        const div = document.createElement('div');
+        div.className = 'glass-card p-4';
+        div.innerHTML = `<h4 class="text-xl font-bold">${c.name}</h4><p>${c.description}</p>`;
+        list.appendChild(div);
+      });
     }
-    filtered.forEach(cmd => {
-      const card = document.createElement('div');
-      card.className = 'glass-card p-4 rounded shadow cursor-pointer hover:bg-indigo-700 transition';
-      card.innerHTML = `
-        <h4 class="text-xl font-bold mb-1">${cmd.name}</h4>
-        <p class="text-indigo-200">${cmd.description}</p>
-      `;
-      commandsList.appendChild(card);
+    input.addEventListener('input', e => renderCommands(e.target.value));
+    renderCommands();
+    document.getElementById('darkToggle').addEventListener('click', () => {
+      document.body.classList.toggle('dark');
     });
-  }
-
-  cmdSearch.addEventListener('input', (e) => {
-    renderCommands(e.target.value);
-  });
-
-  // Initial render
-  renderCommands();
-
-  // Dark mode toggle
-  const darkToggle = document.getElementById('darkToggle');
-  darkToggle.addEventListener('click', () => {
-    document.body.classList.toggle('dark');
-    // Update icon
-    darkToggle.textContent = document.body.classList.contains('dark') ? '☀️' : '🌙';
-    // Save preference
-    if(document.body.classList.contains('dark')) {
-      localStorage.setItem('darkMode', 'true');
-    } else {
-      localStorage.removeItem('darkMode');
-    }
-  });
-
-  // Load saved mode on page load
-  if(localStorage.getItem('darkMode') === 'true') {
-    document.body.classList.add('dark');
-    darkToggle.textContent = '☀️';
-  }
-</script>
-
+  </script>
 </body>
-  </html>
-  
+</html>
