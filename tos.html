@@ -3,22 +3,45 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Nytte - Terms of Service</title>
-  <link href="https://cdn.tailwindcss.com" rel="stylesheet" />
+  <title>Terms of Service - Nytte Bot</title>
+  <meta name="description" content="Terms of Service for using the Nytte Discord Bot." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .glass-card {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: saturate(180%) blur(20px);
+      border-radius: 1rem;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+    }
+  </style>
 </head>
-<body class="bg-gray-900 text-white px-6 py-10 font-sans">
-  <main class="max-w-3xl mx-auto space-y-6">
-    <h1 class="text-4xl font-bold">Terms of Service</h1>
-    <p>Last updated: June 18, 2025</p>
-    <p>By using Nytte (the "Bot") in your Discord server, you agree to the following terms:</p>
-    <ul class="list-disc list-inside space-y-2">
-      <li>You must comply with Discord’s <a class="underline text-indigo-400" href="https://discord.com/terms" target="_blank">Terms of Service</a>.</li>
-      <li>You must not use the Bot for illegal or harmful activities.</li>
-      <li>We reserve the right to block the bot from your server at any time if you abuse its features.</li>
-      <li>The Bot is provided "as-is" with no warranties or guarantees.</li>
-    </ul>
-    <p>These terms may change at any time. Continued use of the Bot implies agreement with the latest terms.</p>
-    <a href="index.html" class="text-indigo-300 underline">← Back to Home</a>
+<body class="bg-gradient-to-br from-indigo-900 via-purple-900 to-pink-900 text-white min-h-screen flex flex-col">
+  <header class="flex items-center justify-between p-6 max-w-6xl mx-auto">
+    <h1 class="text-3xl font-bold">📜 Nytte Bot Terms of Service</h1>
+    <a href="index.html" class="text-indigo-300 hover:text-white transition underline">← Back to Home</a>
+  </header>
+
+  <main class="flex-grow max-w-4xl mx-auto px-6 py-10">
+    <div class="glass-card p-8 space-y-6">
+      <h2 class="text-4xl font-bold">Terms of Service</h2>
+      <p>By inviting and using Nytte, you agree to the following:</p>
+
+      <ul class="list-disc list-inside text-indigo-100 space-y-2">
+        <li>Nytte collects minimal data only necessary for core features (e.g., user/server IDs).</li>
+        <li>You may not use the bot for abuse, harassment, spam, or any malicious activities.</li>
+        <li>We reserve the right to block Nytte from your server at any time for ToS violations.</li>
+        <li>Bot services may change, reset, or be removed without notice.</li>
+        <li>Your continued use of Nytte implies acceptance of future ToS updates.</li>
+      </ul>
+
+      <p>If you do not agree with these terms, you may remove Nytte from your server at any time.</p>
+    </div>
   </main>
+
+  <footer class="text-center p-6 text-indigo-300 bg-indigo-950">
+    © 2025 Nytte by PastKJ • 
+    <a href="privacy.html" class="underline hover:text-white">Privacy Policy</a>
+  </footer>
 </body>
 </html>
